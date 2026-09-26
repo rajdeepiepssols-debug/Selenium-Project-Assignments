@@ -1,0 +1,5 @@
+*** Test Cases ***,username,password,expected
+Valid Login,standard_user,secret_sauce,success
+Invalid Username,wrong_user,secret_sauce,error
+Invalid Password,standard_user,wrong_password,error
+Invalid Credentials,wrong_user,wrong_password,error

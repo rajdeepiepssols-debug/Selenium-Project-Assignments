@@ -1,0 +1,39 @@
+{
+  "user": {
+    "name": "Abcd Tester",
+    "email": "abcd.capstone.tester01@example.com",
+    "password": "TestPass@123",
+    "title": "Mr",
+    "birth_date": "15",
+    "birth_month": "June",
+    "birth_year": "1999",
+    "first_name": "Abcd",
+    "last_name": "Tester",
+    "address": "221B Baker Street",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "zipcode": "90001",
+    "mobile_number": "9876543210"
+  },
+  "payment": {
+    "name_on_card": "Abcd Tester",
+    "card_number": "4111111111111111",
+    "cvc": "123",
+    "expiry_month": "12",
+    "expiry_year": "2030",
+    "order_comment": "Please handle this order with care -- automated test order."
+  },
+  "test_cases": [
+    {
+      "case_id": "TC01",
+      "search_term": "Blue Top",
+      "quantity": "3"
+    },
+    {
+      "case_id": "TC02",
+      "search_term": "Men Tshirt",
+      "quantity": "2"
+    }
+  ]
+}

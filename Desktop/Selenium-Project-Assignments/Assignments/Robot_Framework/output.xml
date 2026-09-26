@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.13.7 on win32)" generated="2026-09-23T16:05:43.113156" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Framework" source="C:\Users\soumi\OneDrive\Desktop\Selenium\Selenium-Project-Assignments\Assignments\Robot_Framework\robot_framework.robot">
+<kw name="Open Browser And Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:43.399806" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-23T16:05:43.399573" elapsed="1.486475"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:44.886945" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T16:05:44.886388" elapsed="0.119112"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.006394" level="INFO">Typing text 'secret_sauce' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.005955" elapsed="0.079011"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.085387" level="INFO">Clicking element 'xpath=//input[@type="submit"]'.</msg>
+<arg>xpath=//input[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.085161" elapsed="0.050395"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=inventory_container</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.135738" elapsed="0.230406"/>
+</kw>
+<status status="PASS" start="2026-09-23T16:05:43.398857" elapsed="1.967526"/>
+</kw>
+<test id="s1-t1" name="Open Browser And Navigate" line="18">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.368522" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.367933" elapsed="0.000697"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.369512" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.369210" elapsed="0.083750"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.466062" level="INFO">Current page contains element 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.453656" elapsed="0.012630"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:45.467792" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.467190" elapsed="0.000726"/>
+</kw>
+<tag>browser</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-09-23T16:05:45.366568" elapsed="0.102032"/>
+</test>
+<test id="s1-t2" name="Fill Login Form" line="23">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.470753" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.470313" elapsed="0.000522"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.471532" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.471323" elapsed="0.033290"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.505668" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.505340" elapsed="0.072262"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.578901" level="INFO">Typing text 'secret_sauce' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.578375" elapsed="0.054207"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.637252" level="INFO">Current page contains element 'xpath=//input[@type="submit"]'.</msg>
+<arg>xpath=//input[@type="submit"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.632925" elapsed="0.004404"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:45.637905" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.637664" elapsed="0.000285"/>
+</kw>
+<tag>login</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-09-23T16:05:45.469636" elapsed="0.168511"/>
+</test>
+<test id="s1-t3" name="Verify Login" line="30">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.639206" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.638951" elapsed="0.000302"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:45.727395" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-23T16:05:45.727571" level="FAIL">Page should have contained element 'id=inventory_container' but did not.</msg>
+<arg>id=inventory_container</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2026-09-23T16:05:45.639512" elapsed="0.089947">Page should have contained element 'id=inventory_container' but did not.</status>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:45.730423" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.730010" elapsed="0.000461"/>
+</kw>
+<tag>login</tag>
+<tag>regression</tag>
+<status status="FAIL" start="2026-09-23T16:05:45.638572" elapsed="0.092050">Page should have contained element 'id=inventory_container' but did not.</status>
+</test>
+<test id="s1-t4" name="Variable Example" line="34">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.731849" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.731586" elapsed="0.000335"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-09-23T16:05:45.732608" level="INFO">${full_name} = standard_user</msg>
+<var>${full_name}</var>
+<arg>${USERNAME}</arg>
+<doc>Returns the given values which can then be assigned to a variable.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.732301" elapsed="0.000349"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${full_name}</arg>
+<arg>standard_user</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.733050" elapsed="0.000305"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:45.733855" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.733669" elapsed="0.000227"/>
+</kw>
+<tag>variables</tag>
+<status status="PASS" start="2026-09-23T16:05:45.731135" elapsed="0.002882"/>
+</test>
+<test id="s1-t5" name="Custom Python Keyword" line="39">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.735298" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.735084" elapsed="0.000269"/>
+</kw>
+<kw name="Calculate Sum">
+<msg time="2026-09-23T16:05:45.737014" level="FAIL">No keyword with name 'Calculate Sum' found.</msg>
+<var>${result}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="FAIL" start="2026-09-23T16:05:45.736966" elapsed="0.000088">No keyword with name 'Calculate Sum' found.</status>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<arg>${result}</arg>
+<arg>30</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="NOT RUN" start="2026-09-23T16:05:45.737367" elapsed="0.000037"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:45.738071" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.737780" elapsed="0.000349"/>
+</kw>
+<tag>custom</tag>
+<status status="FAIL" start="2026-09-23T16:05:45.734691" elapsed="0.003561">No keyword with name 'Calculate Sum' found.</status>
+</test>
+<test id="s1-t6" name="BuiltIn String Operation" line="44">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.739578" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.739281" elapsed="0.000343"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-09-23T16:05:45.740052" level="INFO">${text} = Selenium Robot Framework</msg>
+<var>${text}</var>
+<arg>Selenium Robot Framework</arg>
+<doc>Returns the given values which can then be assigned to a variable.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.739813" elapsed="0.000265"/>
+</kw>
+<kw name="Convert To Upper Case">
+<msg time="2026-09-23T16:05:45.742089" level="FAIL">No keyword with name 'Convert To Upper Case' found.</msg>
+<var>${upper}</var>
+<arg>${text}</arg>
+<status status="FAIL" start="2026-09-23T16:05:45.742042" elapsed="0.000084">No keyword with name 'Convert To Upper Case' found.</status>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${upper}</arg>
+<arg>SELENIUM ROBOT FRAMEWORK</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2026-09-23T16:05:45.742330" elapsed="0.000040"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:45.742890" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.742667" elapsed="0.000267"/>
+</kw>
+<tag>builtin</tag>
+<status status="FAIL" start="2026-09-23T16:05:45.738778" elapsed="0.004265">No keyword with name 'Convert To Upper Case' found.</status>
+</test>
+<test id="s1-t7" name="BuiltIn Mathematical Operation" line="50">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.744183" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.743964" elapsed="0.000267"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-09-23T16:05:45.745073" level="INFO">${result} = 30</msg>
+<var>${result}</var>
+<arg>10 + 20</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.744581" elapsed="0.000534"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-09-23T16:05:45.745629" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>30</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.745350" elapsed="0.000338"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:45.746149" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.745965" elapsed="0.000224"/>
+</kw>
+<tag>builtin</tag>
+<status status="PASS" start="2026-09-23T16:05:45.743574" elapsed="0.002715"/>
+</test>
+<test id="s1-t8" name="API Response Verification" line="55">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:45.747552" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.747319" elapsed="0.000281"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-09-23T16:05:45.748070" level="INFO">Creating Session using : alias=api, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api</arg>
+<arg>https://jsonplaceholder.typicode.com</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-09-23T16:05:45.747930" elapsed="0.000361"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-09-23T16:05:46.279144" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/todos/1 
+ path_url=/todos/1 
+ headers={'User-Agent': 'python-requests/2.34.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-09-23T16:05:46.279587" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/todos/1 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 23 Sep 2026 10:35:46 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"53-hfEnumeNh6YirfjyjaujcOPPT+s"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=QwcX6nLtJ2b6%2BABQIX1mfYF8MxKJ69sRv8nTGsMQs8o%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1785189191"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=QwcX6nLtJ2b6%2BABQIX1mfYF8MxKJ69sRv8nTGsMQs8o%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1785189191"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1785189203', 'Age': '10073', 'cf-cache-status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': 'a3f8e78e6a6de281-MRS', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+} 
+ </msg>
+<msg time="2026-09-23T16:05:46.279885" level="INFO">C:\Users\soumi\OneDrive\Desktop\Selenium\sel_env\Lib\site-packages\urllib3\connectionpool.py:1110: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-09-23T16:05:46.280846" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/todos/1</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-09-23T16:05:45.748588" elapsed="0.532391"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2026-09-23T16:05:46.282793" level="INFO">${status} = 200</msg>
+<var>${status}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2026-09-23T16:05:46.281817" elapsed="0.001052"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${status}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-09-23T16:05:46.283606" elapsed="0.000944"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:46.286360" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:46.285628" elapsed="0.000884"/>
+</kw>
+<tag>api</tag>
+<tag>regression</tag>
+<status status="PASS" start="2026-09-23T16:05:45.746823" elapsed="0.540101"/>
+</test>
+<test id="s1-t9" name="Page Assertion" line="62">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-09-23T16:05:46.289015" level="INFO">Starting test case</msg>
+<arg>Starting test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:46.288754" elapsed="0.000306"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-23T16:05:46.421695" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-09-23T16:05:46.422107" level="FAIL">Page should have contained element 'id=inventory_container' but did not.</msg>
+<arg>id=inventory_container</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2026-09-23T16:05:46.289430" elapsed="0.133866">Page should have contained element 'id=inventory_container' but did not.</status>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-09-23T16:05:46.424505" level="INFO">Test case completed</msg>
+<arg>Test case completed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-23T16:05:46.424052" elapsed="0.000646"/>
+</kw>
+<tag>assertion</tag>
+<tag>regression</tag>
+<status status="FAIL" start="2026-09-23T16:05:46.288299" elapsed="0.137136">Page should have contained element 'id=inventory_container' but did not.</status>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-23T16:05:46.428033" elapsed="4.116445"/>
+</kw>
+<status status="FAIL" start="2026-09-23T16:05:43.114396" elapsed="7.430268"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">api</stat>
+<stat pass="0" fail="1" skip="0">assertion</stat>
+<stat pass="1" fail="0" skip="0">browser</stat>
+<stat pass="1" fail="1" skip="0">builtin</stat>
+<stat pass="0" fail="1" skip="0">custom</stat>
+<stat pass="1" fail="1" skip="0">login</stat>
+<stat pass="1" fail="2" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">variables</stat>
+</tag>
+<suite>
+<stat name="Robot Framework" id="s1" pass="5" fail="4" skip="0">Robot Framework</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-09-23T16:05:43.397379" level="ERROR">Error in file 'C:\Users\soumi\OneDrive\Desktop\Selenium\Selenium-Project-Assignments\Assignments\Robot_Framework\robot_framework.robot' on line 4: Importing library 'CustomLibrary' failed: ModuleNotFoundError: No module named 'CustomLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\soumi\OneDrive\Desktop\Selenium\sel_env\Scripts\robot.exe
+  C:\Program Files\Python313\python313.zip
+  C:\Program Files\Python313\DLLs
+  C:\Program Files\Python313\Lib
+  C:\Program Files\Python313
+  C:\Users\soumi\OneDrive\Desktop\Selenium\sel_env
+  C:\Users\soumi\OneDrive\Desktop\Selenium\sel_env\Lib\site-packages</msg>
+</errors>
+</robot>
